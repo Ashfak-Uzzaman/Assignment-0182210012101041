@@ -7,44 +7,101 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Task2Activity">
+    <TextView
+
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"
+        android:textSize="30dp"
+        android:text="Khadok"
+
+        />
 
     <CheckBox
         android:id="@+id/checkbox1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="Biriyani"/>
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:onClick="onCheckBoxClick"
+        android:text="Biriyani          250/-"/>
 
     <CheckBox
         android:id="@+id/checkbox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="Parata"/>
+        android:layout_marginLeft="10dp"
+
+        android:onClick="onCheckBoxClick"
+        android:text="Parata            30/-"/>
 
     <CheckBox
         android:id="@+id/checkbox3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="Kacchi"/>
+        android:layout_marginLeft="10dp"
+        android:onClick="onCheckBoxClick"
+        android:text="Kacchi            350/-"/>
+    <CheckBox
+        android:id="@+id/checkbox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:onClick="onCheckBoxClick"
+        android:text="Gril                 400/-"/>
+
+
+    <RadioGroup
+        android:id="@+id/paymentMethod"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <RadioButton
+            android:id="@+id/cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash on delivary"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online Paymenta" />
+
+
+    </RadioGroup>
 
     <Button
         android:id="@+id/button"
-        android:layout_margin="20dp"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_gravity ="center_horizontal"
-        android:text="Done"
-        android:onClick="done"
-        />
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:onClick="confirmOrder"
+        android:text="Confirm Order" />
 
     <TextView
-        android:layout_margin="20dp"
-        android:id="@+id/textview"
+        android:id="@+id/cartheading"
+        android:layout_margin="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
+        android:text="Cart"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/cart"
+        android:layout_margin="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
         android:text="Add foods please"
         android:gravity="center_horizontal"
         />

@@ -101,6 +101,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
         android:orientation="vertical"
+        android:gravity="center_horizontal"
         >
         <Button
             android:id="@+id/btn_1"
@@ -108,10 +109,11 @@
             android:layout_height="wrap_content"
 
 
-            android:layout_marginTop="0dp"
-            android:layout_marginLeft="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
 
-            android:background="@color/white"
+            android:background="@drawable/button_orange"
             app:backgroundTint="@null"
 
             android:text="Rock"
@@ -126,14 +128,14 @@
 
 
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="0dp"
-            android:layout_marginRight="0dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
 
-            android:background="@color/white"
+            android:background="@drawable/button_light_blue_s1"
             app:backgroundTint="@null"
 
             android:text="Paper"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="15sp"
 
             />
@@ -146,6 +148,7 @@
 
             android:layout_marginTop="20dp"
             android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
 
             android:background="@drawable/button_light_green_s1"
             app:backgroundTint="@null"
