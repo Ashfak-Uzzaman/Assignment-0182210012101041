@@ -30,7 +30,7 @@
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:onClick="task1"
-            android:text="Task-1" />
+            android:text="Assignment-1" />
 
         <Button
             android:id="@+id/button3"
@@ -39,7 +39,7 @@
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:onClick="task2"
-            android:text="Task-2" />
+            android:text="Assignment-2 -> Part-1" />
 
         <Button
             android:id="@+id/button"
@@ -48,7 +48,7 @@
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:onClick="task3"
-            android:text="Task-3" />
+            android:text="Assignment-2 -> Part-2" />
     </LinearLayout>
 
     <TextView

@@ -2,9 +2,11 @@ package com.example.assignment_0182210012101041;
 
 import android.media.Rating;
 import android.os.Bundle;
+import android.widget.CompoundButton;
 import android.widget.ProgressBar;
 import android.widget.RatingBar;
 import android.widget.SeekBar;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -23,17 +25,21 @@ public class Task3Activity extends AppCompatActivity {
 
     ProgressBar progressBar;
 
+    Switch aSwitch;
 
+    boolean continueProgress=true;
+
+    int progress=0;
 
 
     void doWork(){
 
-        for(int progress=10;progress<=100;progress+=10){
+        for(progress=progress;progress<=100 && continueProgress;progress+=10){
             try {
-
-
-                Thread.sleep(1000);
-                progressBar.setProgress(progress);
+                Thread.sleep(500);
+                if(continueProgress)
+                    progressBar.setProgress(progress);
+                else return;
 
             }
 
@@ -59,8 +65,35 @@ public class Task3Activity extends AppCompatActivity {
         //EdgeToEdge.enable(this);
         setContentView(R.layout.activity_task3);
 
-        // progressbar
         progressBar=findViewById(R.id.progressBar);
+
+        // switch
+        aSwitch=findViewById(R.id.switch1);
+
+        aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    continueProgress=true;
+                    Thread thread=new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            doWork();
+                        }
+                    });
+                    thread.start();
+                }
+                else{
+                    continueProgress=false;
+                }
+            }
+        });
+
+
+
+        // progressbar
+        /*progressBar=findViewById(R.id.progressBar);
+
 
         Thread thread=new Thread(new Runnable() {
             @Override
@@ -68,7 +101,7 @@ public class Task3Activity extends AppCompatActivity {
                 doWork();
             }
         });
-        thread.start();
+        thread.start();*/
 
 
 

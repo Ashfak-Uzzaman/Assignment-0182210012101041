@@ -15,7 +15,7 @@
         android:textStyle="bold|italic"
         android:gravity="center_horizontal"
         android:textSize="30dp"
-        android:text="Khadok"
+        android:text="Khadok Foods"
 
         />
 
