@@ -40,7 +40,7 @@ public class Task3Activity extends AppCompatActivity {
                 if(continueProgress)
                     progressBar.setProgress(progress);
                 else return;
-
+//
             }
 
             catch (Exception e){
@@ -48,7 +48,7 @@ public class Task3Activity extends AppCompatActivity {
             }
 
             if(progress==100){
-                progress=0;
+                progress=-10;
             }
 
         }
