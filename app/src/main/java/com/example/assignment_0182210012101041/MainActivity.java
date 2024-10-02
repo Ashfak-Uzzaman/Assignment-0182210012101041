@@ -2,6 +2,7 @@ package com.example.assignment_0182210012101041;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import androidx.activity.EdgeToEdge;
@@ -32,8 +33,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void task4(View view){
-
+    public void goToForm(View view){
+        Intent intent=new Intent(MainActivity.this, FormActivity.class );
+        startActivity(intent);
     }
 
 

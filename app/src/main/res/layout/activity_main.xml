@@ -6,6 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".MainActivity">
 
 
@@ -49,6 +50,14 @@
             android:layout_weight="1"
             android:onClick="task3"
             android:text="Assignment-2 -> Part-2" />
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="goToForm"
+            android:text="Form" />
     </LinearLayout>
 
     <TextView

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/main"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+
+    android:background="@color/white"
+
+    tools:context=".FormActivity">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/inputlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_marginTop="60dp"
+
+        android:background="@drawable/edit_text_background"
+        android:backgroundTint="@color/charcoal"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+
+            android:text="Student Registration"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold|italic"
+
+
+            />
+
+        <EditText
+
+            android:id="@+id/name"
+            android:layout_width="360dp"
+            android:layout_height="55dp"
+
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+
+            android:background="@drawable/edit_text_background"
+            android:drawableRight="@drawable/ic_profile_drk"
+
+            android:hint="Name"
+
+
+            android:inputType="text"
+
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+
+            android:textColorHint="#858383"
+            android:textSize="15dp"
+            android:textStyle="normal"
+
+            />
+
+        <EditText
+
+            android:id="@+id/id"
+            android:layout_width="360dp"
+            android:layout_height="55dp"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="0dp"
+
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+
+            android:background="@drawable/edit_text_background"
+
+            android:drawableRight="@drawable/ic_registration"
+
+            android:hint="ID"
+            android:textColorHint="@color/statusBarHint1"
+
+            android:inputType="text"
+            android:textSize="15dp"
+            android:textStyle="normal"
+
+            />
+
+        <EditText
+
+            android:id="@+id/email"
+            android:layout_width="360dp"
+            android:layout_height="55dp"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="0dp"
+
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+
+            android:background="@drawable/edit_text_background"
+
+            android:drawableRight="@drawable/ic_email"
+
+            android:hint="Email"
+            android:textColorHint="@color/statusBarHint1"
+
+            android:inputType="textEmailAddress"
+            android:textSize="15dp"
+            android:textStyle="normal"
+
+            />
+
+        <EditText
+
+            android:id="@+id/mobile"
+            android:layout_width="360dp"
+            android:layout_height="55dp"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="0dp"
+
+            android:background="@drawable/edit_text_background"
+            android:drawableRight="@drawable/ic_mobile_no"
+
+            android:hint="Mobile Number"
+
+
+            android:inputType="number"
+
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+
+            android:textColorHint="@color/statusBarHint1"
+            android:textSize="15dp"
+            android:textStyle="normal"
+
+            />
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="0dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxCornerRadiusBottomEnd="40dp"
+            app:boxCornerRadiusBottomStart="40dp"
+            app:boxCornerRadiusTopEnd="40dp"
+            app:boxCornerRadiusTopStart="40dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:spinnerMode="dropdown"
+            android:background="@drawable/edit_text_background"
+            />
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+
+            android:background="@drawable/button_light_green_s1"
+            android:text="Submit"
+
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:backgroundTint="@null"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/outputlayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:backgroundTint="@color/charcoal"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/outputText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/goback"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go back"
+            android:textColor="@color/black"
+            android:background="@drawable/button_light_green_s1"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
