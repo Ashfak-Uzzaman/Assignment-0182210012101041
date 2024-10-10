@@ -38,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goToListview(View view){
+        Intent intent=new Intent(MainActivity.this, ListviewActivity.class );
+        startActivity(intent);
+
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

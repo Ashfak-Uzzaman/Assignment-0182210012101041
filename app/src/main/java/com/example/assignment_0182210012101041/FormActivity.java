@@ -89,6 +89,12 @@ public class FormActivity extends AppCompatActivity {
                 email=etEmail.getText().toString();
                 password=etPassword.getText().toString();
 
+                String ss="true";
+                if(idPattern.matcher(id).matches()==false){
+                    ss="false";
+                }
+                Log.i("Ashfak",ss);
+
 
 
                 if (name.isEmpty()){
@@ -107,6 +113,8 @@ public class FormActivity extends AppCompatActivity {
                     etId.requestFocus();
                 }
                 else if (!idPattern.matcher(id).matches()){
+
+
                     etId.setError("Invalid id");
                     etName.requestFocus();
                 }
