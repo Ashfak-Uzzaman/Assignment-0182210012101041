@@ -18,14 +18,16 @@ import androidx.core.view.WindowInsetsCompat;
 
 import java.util.ArrayList;
 
+
 public class ListviewActivity extends AppCompatActivity {
 
+    private ListView myListView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listview);
 
-        ListView myListView=findViewById(R.id.listView);
+        myListView=findViewById(R.id.listView);
 
         ArrayList<String>grocery=new ArrayList<>();
 

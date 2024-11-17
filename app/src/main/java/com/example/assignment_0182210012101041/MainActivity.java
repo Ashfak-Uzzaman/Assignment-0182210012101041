@@ -44,6 +44,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void goToExpandableListview(View view){
+        Intent intent=new Intent(MainActivity.this, ExpandableListViewActivity.class );
+        startActivity(intent);
+
+    }
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
